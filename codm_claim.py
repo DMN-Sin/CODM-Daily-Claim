@@ -63,7 +63,7 @@ def _validate_once(player_id, country, region):
         "voucherTypeName": VOUCHER_TYPE,
         "whiteLabelId": str(WHITELABEL_ID),
         "deviceId": str(uuid.uuid4()),
-        "userId": player_id,
+        "userId": 6874214553212157953,
         "zoneId": "",
     }
     return http_json(url, payload, headers={"Accept-Language": ""})
