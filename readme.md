@@ -11,7 +11,7 @@ The store gives every account one free "DAILY GIFT" per day. You can claim it ma
 The script `codm_claim.py` replicates the requests the official store makes in its browser, in the same order:
 
 1. **Lookup** - sends your Player ID to the store's validation API, which returns your profile (nickname, short ID, rank) and your account's home country.
-2. **Product** - fetches the store page for your country (for example `/in/codm` for India, `/iq/codm` for Iraq).
+2. **Product** - fetches the store page for your country (for example `/de/codm` for Germany).
 3. **Freebies** - asks for your available items and picks the daily gift.
 4. **Token** - gets a short-lived claim token, same as the browser does when you click CLAIM GIFT.
 5. **Claim** - posts the claim to the store's claim endpoint. One request, same as the button.
